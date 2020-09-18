@@ -23,7 +23,7 @@ public class JiraTest {
 		String response = 
 		given()
 			.relaxedHTTPSValidation()
-			.header("Content-Type", "application/json").body("{\"username\":\"testerbaku\", \"password\": \"Adworker78\"}")
+			.header("Content-Type", "application/json").body("{\"username\":\"testerbaku\", \"password\": \"Password\"}")
 			.filter(session)
 		.when()
 			.post("/rest/auth/1/session")
